@@ -8,5 +8,9 @@ github.com/Arch-4ng3l/Monkey v0.0.0-20230819101625-118820a54e2f h1:nNiqQXsgdZa0O
 github.com/Arch-4ng3l/Monkey v0.0.0-20230819101625-118820a54e2f/go.mod h1:n4i1nBhYygqAfYIfPQDghvPZSrlGC85f5sJdPfpvXWc=
 github.com/Arch-4ng3l/Monkey v0.0.0-20230819163544-409b540e0459 h1:I/JKyd9rk4gt2B2xcFNRpGqu4FU/xNOVMNQECF9nT/k=
 github.com/Arch-4ng3l/Monkey v0.0.0-20230819163544-409b540e0459/go.mod h1:n4i1nBhYygqAfYIfPQDghvPZSrlGC85f5sJdPfpvXWc=
+github.com/Arch-4ng3l/Monkey v0.0.0-20230820060330-72164d5d10f4 h1:4Pu9BcqAfEiuryibk08dn5oLD2uXw2tGXz07sES+9ig=
+github.com/Arch-4ng3l/Monkey v0.0.0-20230820060330-72164d5d10f4/go.mod h1:n4i1nBhYygqAfYIfPQDghvPZSrlGC85f5sJdPfpvXWc=
+github.com/Arch-4ng3l/Monkey v0.0.0-20230820061812-175c6df3a706 h1:GFv3uyJnqNqOOpU/0olStU/FGY6nf6yt30aSslcKOgk=
+github.com/Arch-4ng3l/Monkey v0.0.0-20230820061812-175c6df3a706/go.mod h1:n4i1nBhYygqAfYIfPQDghvPZSrlGC85f5sJdPfpvXWc=
 github.com/TwiN/go-color v1.4.1 h1:mqG0P/KBgHKVqmtL5ye7K0/Gr4l6hTksPgTgMk3mUzc=
 github.com/TwiN/go-color v1.4.1/go.mod h1:WcPf/jtiW95WBIsEeY1Lc/b8aaWoiqQpu5cf8WFxu+s=

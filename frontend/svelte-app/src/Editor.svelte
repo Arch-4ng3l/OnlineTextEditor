@@ -1,7 +1,6 @@
 <script>
   import { onMount } from "svelte";
   import { writable } from "svelte/store";
-
   let fontSize = 16;
   let editor;
   let isVimEnabled = false;
@@ -137,7 +136,7 @@
   #editor {
     border-radius: 10px;
     height: 600px;
-    width: 1000px;
+    width: 1250px;
     border-color: black;
     border-width: 1px;
   }
@@ -154,7 +153,7 @@
     text-align:center;
     height: 100px;
     font-weight: bold;
-    width: 1000px;
+    width: 300px;
     border-radius: 10px;
     border-width: 1px;
     border-color: black;
@@ -204,15 +203,17 @@
   }
 
   .stBtn {
+    border-radius: 10px;
     font-size: 30px;
   }
 
 
 </style>
 
-<button on:click={toggleSettings} class="stBtn">⚙</button>
+<button on:click={toggleSettings} class="stBtn">Settings: ⚙</button>
 
 <div class="container">
+
 
   <div class="settings" class:open={isOpen}>
     <br>
@@ -239,6 +240,6 @@
     <button on:click={sendCode}> Run Code </button>
     <br>
     <div class="output">
-      <p>{$out}</p>
+      <p>Output: {$out}</p>
     </div>
 </div>
