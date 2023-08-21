@@ -1,12 +1,14 @@
 <script>
   import { onMount } from "svelte";
   import { writable } from "svelte/store";
+
   let fontSize = 16;
   let editor;
   let isVimEnabled = false;
   let isEmacsEnabled = false;
   let isAutoEnabled = false;
   let isOpen = false;
+  let output;
 
   import "ace-builds/src-noconflict/ace";
   import "ace-builds/src-noconflict/theme-twilight";
@@ -21,7 +23,6 @@
   }
 
   const url = "/api/code";
-  let out = writable(" ");
   onMount(() => {
 
     editor = ace.edit("editor");
@@ -109,12 +110,14 @@
       }
     })
     .then(data => {
-      const str = data.output;
+      const str = data.output.replace(/\n/g, '<br>');
+
       const err = data.err;
+      console.log(err);
       if (err != undefined) {
         return;
       }
-      out.set(str);
+      output.innerHTML = str;
     });
 }
 
@@ -240,6 +243,6 @@
     <button on:click={sendCode}> Run Code </button>
     <br>
     <div class="output">
-      <p>Output: {$out}</p>
+      <div bind:this={output}></div>
     </div>
 </div>
